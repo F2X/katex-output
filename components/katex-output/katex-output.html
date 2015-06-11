@@ -1,0 +1,32 @@
+<!--
+Copyright © François-Xavier Gentilhomme.
+LICENSE: https://github.com/F2X/katex-output/blob/master/LICENSE
+-->
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="./katex.html">
+<dom-module id="katex-output">
+    <template>
+        <div id="katex"></div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'katex-output',
+        properties: {
+            /**
+             * LaTeX string
+             *
+             * @attribute latex
+             * @type String
+             */
+            latex: {
+                type: String,
+                observer: '_latexChanged'
+            }
+        },
+        _latexChanged: function () {
+            katex.render(this.latex, this.$.katex, { displayMode: true });
+        }
+    });
+</script>

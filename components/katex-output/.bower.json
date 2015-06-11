@@ -1,0 +1,38 @@
+{
+  "name": "katex-output",
+  "authors": [
+    "François-Xavier Gentilhomme <gentilhomme.fx@outlook.fr>"
+  ],
+  "description": "Fast math typesetting for the web",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "katex"
+  ],
+  "main": "katex-output.html",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/F2X/katex-output/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.0.x"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#1.0.x",
+    "web-component-tester": "*"
+  },
+  "_release": "d3fecfb313",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d3fecfb3136affd12f8e235855b4390cc3c6d455"
+  },
+  "_source": "git://github.com/F2X/katex-output.git",
+  "_target": "master",
+  "_originalSource": "F2X/katex-output",
+  "_direct": true
+}
