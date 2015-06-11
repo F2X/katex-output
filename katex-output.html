@@ -5,15 +5,6 @@ LICENSE: https://github.com/F2X/katex-output/blob/master/LICENSE
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="./katex.html">
 <dom-module id="katex-output">
-    <style>
-        :host {
-            display: inline-block;
-        }
-        #katex {
-            font-size: 18px;
-            padding: 10px 0;
-        }
-    </style>
     <template>
         <div id="katex"></div>
     </template>
@@ -31,12 +22,11 @@ LICENSE: https://github.com/F2X/katex-output/blob/master/LICENSE
              */
             latex: {
                 type: String,
-                value: '',
                 observer: '_latexChanged'
             }
         },
         _latexChanged: function () {
-            katex.render(this.latex, this.$.katex);
+            katex.render(this.latex, this.$.katex, { displayMode: true });
         }
     });
 </script>
