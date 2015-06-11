@@ -3,11 +3,15 @@ Copyright © François-Xavier Gentilhomme.
 LICENSE: https://github.com/F2X/katex-output/blob/master/LICENSE
 -->
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="katex.html.html">
+<link rel="import" href="./katex.html">
 <dom-module id="katex-output">
     <style>
         :host {
             display: inline-block;
+        }
+        #katex {
+            font-size: 18px;
+            padding: 10px 0;
         }
     </style>
     <template>
@@ -19,8 +23,16 @@ LICENSE: https://github.com/F2X/katex-output/blob/master/LICENSE
     Polymer({
         is: 'katex-output',
         properties: {
+            /**
+             * LaTeX string
+             *
+             * @attribute latex
+             * @type String
+             */
+            latex: String
         },
         attached: function () {
+            katex.render(this.latex, this.$.katex);
         }
     });
 </script>
