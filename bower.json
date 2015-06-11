@@ -1,6 +1,6 @@
 {
   "name": "katex-output",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "authors": [
     "François-Xavier Gentilhomme <gentilhomme.fx@outlook.fr>"
   ],
@@ -20,14 +20,10 @@
     "/demo/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#1.0.x",
-    "katex-build": "0.3.x"
+    "polymer": "Polymer/polymer#1.0.x"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#1.0.x",
-    "iron-icons": "polymerelements/iron-icons#1.0.x",
-    "paper-fab": "polymerelements/paper-fab#1.0.x",
-    "paper-toast": "polymerelements/paper-toast#1.0.x",
     "web-component-tester": "*"
   }
 }
