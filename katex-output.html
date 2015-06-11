@@ -29,9 +29,13 @@ LICENSE: https://github.com/F2X/katex-output/blob/master/LICENSE
              * @attribute latex
              * @type String
              */
-            latex: String
+            latex: {
+                type: String,
+                value: '',
+                observer: '_latexChanged'
+            }
         },
-        attached: function () {
+        _latexChanged: function () {
             katex.render(this.latex, this.$.katex);
         }
     });
